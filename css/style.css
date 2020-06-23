@@ -465,6 +465,19 @@ img{
   background: url(../img/svg/arrow-right-ico.svg) no-repeat right center;
 }
 
+.btn-square{
+  font-weight: 500;
+  color: #fff;
+  background: #1B7DFF;
+  border: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-square:hover, .btn-square:focus, .btn-square:active{
+  background: #1b57ff;
+}
+
 /* Header styles start */
 
 header{
@@ -569,17 +582,8 @@ header{
 }
 
 .search-form_submit{
-  text-transform: uppercase;
   padding: 15px 39px;
-  font-weight: 500;
   font-size: 24px;
-  color: #fff;
-  background: #1B7DFF;
-  border: 0;
-}
-
-.search-form_submit:hover, .search-form_submit:focus, .search-form_submit:active{
-  background: #1b57ff;
 }
 
 /* Intro styles end */
@@ -772,6 +776,87 @@ header{
   margin-bottom: 58px;
 }
 
-
-
 /* Tours styles end */
+
+/* Top styles start */
+
+.top{
+  margin-bottom: 86px;
+}
+
+.top_title{
+  margin-bottom: 54px;
+}
+
+.top_cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 58px;
+}
+
+.top_card{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.top_card-pic{
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.top_card-stats{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 25px;
+  background: rgba(21, 24, 36, 0.6);
+}
+
+.top_card-title{
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0 auto 0 0;
+  text-transform: uppercase;
+}
+
+.top_card-likes, .top_card-comments{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.top_card-likes{
+  padding-right: 20px;
+  background: url(../img/svg/heart-ico.svg) no-repeat right center;
+  margin-right: 14px;
+}
+
+.top_card-comments{
+  padding-right: 23px;
+  background: url(../img/svg/comment-ico.svg) no-repeat right center;
+}
+
+.top_card-desc{
+  margin-bottom: 31px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.top_card-more{
+  width: 118px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: normal;
+  padding: 12px 19px;
+  margin: auto 0 0 0;
+}
+
+/* Top styles end */
